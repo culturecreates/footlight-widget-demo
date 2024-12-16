@@ -54,17 +54,6 @@
 		href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
 		rel="stylesheet">
 
-	<!-- social media -->
-	<meta property="fb:app_id" content="123254964370141">
-	<meta property="og:type" content="article">
-	<meta property="og:url" content="https://nac-cna.ca/en/installations">
-	<meta property="og:title" content="Art installations">
-
-	<!-- facebook share image and description -->
-	<meta property="og:image" content="">
-	<meta property="og:description"
-		content="Though it is best known for its outstanding productions on its stages, the National Arts Centre has a strong collection of visual art that is presented throughout its building. The majority of artworks were commissioned for the opening of the building in 1969 through a new funding opportunity that allowed for a portion of the construction budget to be attributed to the “decorative arts” in public buildings. Since then, the collection has slowly grown through donations and a few recent acquisitions. ">
-	<meta property="fb:admins" content="728780803">
 
 
 
@@ -104,18 +93,9 @@
 
 	<!-- jQuery import -->
 
-	<script src="https://nac-cna.ca/assets/js/libs/jquery-3.7.1.min.js"></script>
-	<script>window.jQuery || document.write('<script src="https://nac-cna.ca/assets/js/libs/jquery-3.7.1.min.js"><\/script>')</script>
-	<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
 
 
-	<!-- Google JS API -->
-	<script src="https://nac-cna.ca/assets/js/jsapi.js"></script>
 
-	<script type="text/javascript">
-
-		var reCAPTCHAv2_init = function () { document.reCAPTCHAv2(), window.jQuery && window.jQuery(document).trigger("reCAPTCHAv2_init") }; !function () { if (!window.___reCAPTCHAv2_init) { window.___reCAPTCHAv2_init = !0, document.reCAPTCHAv2 = function (a) { if ("undefined" != typeof grecaptcha) { void 0 == a && (a = "g-recaptcha-nac"), "string" == typeof a && (a = window.jQuery ? jQuery(".g-recaptcha-nac") : document.getElementsByClassName(a)), void 0 == a.length && (a = [a]); for (var b = 0; b < a.length; b++)grecaptcha.render(a[b], { sitekey: "6LdrWiMUAAAAAAhDmy25w15iEbk3vcEtvCX7DC2S" }) } }; var a = document.createElement("script"); a.type = "text/javascript", a.async = !0, a.src = "https://www.google.com/recaptcha/api.js?onload=reCAPTCHAv2_init&render=explicit&hl=en"; var b = document.getElementsByTagName("script")[0]; b.parentNode.insertBefore(a, b) } }();
-	</script>
 
 	<!-- Modernizr -->
 	<script src="https://nac-cna.ca/assets/css/foundation-framework/dist/js/modernizr.js"></script>
@@ -123,10 +103,7 @@
 
 <body id="installations" class="en landing landing   ">
 
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKQS6X" height="0" width="0"
-			style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+
 
 
 
@@ -1323,77 +1300,6 @@
 
 
 
-	<script>
-		// Kludge for Foundation JS/jQuery upgrade from 2.x to 3.x
-		jQuery.fn.load = function (callback) {
-			this.on('load', callback);
-			return this;
-		};
-	</script>
-	<script src="https://nac-cna.ca/assets/css/foundation-framework/dist/js/foundation.min.js?v=7.9"></script>
-
-	<script src="//nac-cna.ca/mini/16d262316dff47cebadd741147ed078037a31ce8.1731967140.v7.9.js"></script>
-
-	<script src="//nac-cna.ca/mini/0f6b4668fb00d4555cf90fe7f3d68d58565e2636.1626897497.v7.9.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
-	<script>
-		$("document").ready(function () {
-			window.cookieconsent.initialise({
-				enabled: true,
-				type: 'opt-in',
-				cookie: {
-					domain: 'nac-cna.ca',
-					name: 'cookieconsent_status',
-					secure: true,
-					expiryDays: 730
-				},
-				palette: {
-					popup: {
-						background: '#6068b2',
-						text: '#ffffff'
-					},
-					button: {
-						background: '#fdd757'
-					}
-				},
-				content: {
-					message:
-						'We place cookies on your device to improve your browsing experience. They&#8217;re safe and don&#8217;t contain sensitive information. If you are not comfortable with us using this information, please adjust your browser settings before continuing your visit. Learn more about <a href="/en/legal/privacy" class="text-white text-inline-link">how the NAC protects&nbsp;your&nbsp;privacy</a>.'
-					,
-					href: '/en/legal/privacy',
-					close: '&times;'
-				},
-				elements: {
-					allow: '<a aria-label="allow cookies message" tabindex="0" class="cc-btn cc-allow bttn">Ok, I understand</a>',
-					deny: '<a aria-label="dismiss cookie message" tabindex="0" class="cc-btn cc-dismiss hidden"></a>',
-				},
-				layout: 'nac-cookie-layout',
-				layouts: {
-					'nac-cookie-layout': '<div class=\"nac-cookie-layout hide-for-xlarge-up\"><div class=\"row\"><div class=\"column text-left\">{{message}}</div><div class=\"column text-center\">{{compliance}}</div></div>{{close}}</div><div class=\"nac-cookie-layout nac-cookie-layout-xlarge show-for-xlarge-up\"><div class=\"row\" data-equalizer><div class=\"column xlarge-8 xxlarge-9 text-left\" data-equalizer-watch>{{message}}</div><div class=\"column xlarge-3 xxlarge-2 xlarge-pull-1 text-center\" data-equalizer-watch>{{compliance}}</div></div>{{close}}</div>'
-				},
-				onPopupOpen: function (status) {
-					//console.log( "test" );
-					$(document).foundation('reflow');
-				}
-			});
-		});
-	</script>
 
 
 
@@ -1417,60 +1323,23 @@
 
 
 
-	<script src="/en/js/installations?v=7.9&"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function () {
-
-			/*
-				prompt user to login after first-fav
-			*/
-			window.loginPrompt = function () {
-				if (window.firstFav) {
-					var d = new Date();
-					var year = d.getFullYear();
-					var month = d.getMonth();
-					var day = d.getDate();
-					var threeMonthsInFuture = new Date(year, month + 3, day);
-					var domain = window.location.hostname;
-					domain = domain.replace(/^www\./, '');
-					domain = domain.replace(/^stage\./, '');
-					domain = domain.replace(/^test\./, '');
-
-					if (window.userLoggedIn || window.promptedToLogin == "1") {
-						log("user is currently logged in, or has already been prompted to log in");
-					} else {
-						log("user is not logged in, prompting for login");
-
-						// prompt for login
-						$("body").append('<div id="loginPrompt" class="reveal-modal modal-wrapper modal-vertical-center" data-reveal aria-labelledby="loginPromptTitle" aria-hidden="true" role="dialog">\
-							<div class="row"><div class="column text-center"><div class="reveal-modal-content padding-b-2 padding-t-2">\
-							<h2 id="loginPromptTitle" class="text-center text-balance padding-t-1">This has been added to your Wish List</h2>\
-							<p class="text-center text-balance">Log in or create an account to save and access your Wish List from any device.</p>\
-							<div class="text-center"><a href="https://arts.nac-cna.ca/en/account/login?returnurl=https%3A%2F%2Fnac-cna.ca%2Fen%2Finstallations" title="Login/create account" class="bttn nomargin">\
-								Login/create account\
-							</a></div></div></div></div>\
-  							<a class="close-reveal-modal" aria-label="Close">&#215;</a>\
-						</div>').find('#loginPrompt').foundation('reveal', 'open');
-
-						// set a cookie so next time user visits, we won't bug them
-						Cookies.set(window.loginPrompted, "1", {
-							expires: threeMonthsInFuture,
-							domain: domain,
-							secure: true,
-						});
-					}
-				}
-				window.firstFav = false;
-			};
-		});
-	</script>
 
 
 
-	<!--[if (IE)&(lt IE 9) ]>
-		<script src="https://nac-cna.ca/assets/js/rem.min.js"></script>
-	<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
