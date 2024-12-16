@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Art installations | National Arts Centre </title>
+	<title>Art installations 2 | National Arts Centre </title>
 	<meta name="description"
 		content="Though it is best known for its outstanding productions on its stages, the National Arts Centre has a strong collection of visual art that is presented throughout its building. The majority of artworks were commissioned for the opening of the building in 1969 through a new funding opportunity that allowed for a portion of the construction budget to be attributed to the “decorative arts” in public buildings. Since then, the collection has slowly grown through donations and a few recent acquisitions.">
 	<meta name="keywords" content="">
@@ -1322,49 +1322,7 @@
 
 
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
-	<script>
-		$("document").ready(function () {
-			window.cookieconsent.initialise({
-				enabled: true,
-				type: 'opt-in',
-				cookie: {
-					domain: 'nac-cna.ca',
-					name: 'cookieconsent_status',
-					secure: true,
-					expiryDays: 730
-				},
-				palette: {
-					popup: {
-						background: '#6068b2',
-						text: '#ffffff'
-					},
-					button: {
-						background: '#fdd757'
-					}
-				},
-				content: {
-					message:
-						'We place cookies on your device to improve your browsing experience. They&#8217;re safe and don&#8217;t contain sensitive information. If you are not comfortable with us using this information, please adjust your browser settings before continuing your visit. Learn more about <a href="/en/legal/privacy" class="text-white text-inline-link">how the NAC protects&nbsp;your&nbsp;privacy</a>.'
-					,
-					href: '/en/legal/privacy',
-					close: '&times;'
-				},
-				elements: {
-					allow: '<a aria-label="allow cookies message" tabindex="0" class="cc-btn cc-allow bttn">Ok, I understand</a>',
-					deny: '<a aria-label="dismiss cookie message" tabindex="0" class="cc-btn cc-dismiss hidden"></a>',
-				},
-				layout: 'nac-cookie-layout',
-				layouts: {
-					'nac-cookie-layout': '<div class=\"nac-cookie-layout hide-for-xlarge-up\"><div class=\"row\"><div class=\"column text-left\">{{message}}</div><div class=\"column text-center\">{{compliance}}</div></div>{{close}}</div><div class=\"nac-cookie-layout nac-cookie-layout-xlarge show-for-xlarge-up\"><div class=\"row\" data-equalizer><div class=\"column xlarge-8 xxlarge-9 text-left\" data-equalizer-watch>{{message}}</div><div class=\"column xlarge-3 xxlarge-2 xlarge-pull-1 text-center\" data-equalizer-watch>{{compliance}}</div></div>{{close}}</div>'
-				},
-				onPopupOpen: function (status) {
-					//console.log( "test" );
-					$(document).foundation('reflow');
-				}
-			});
-		});
-	</script>
+	
 
 
 
@@ -1386,62 +1344,6 @@
 
 
 
-
-
-	<script src="/en/js/installations?v=7.9&"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function () {
-
-			/*
-				prompt user to login after first-fav
-			*/
-			window.loginPrompt = function () {
-				if (window.firstFav) {
-					var d = new Date();
-					var year = d.getFullYear();
-					var month = d.getMonth();
-					var day = d.getDate();
-					var threeMonthsInFuture = new Date(year, month + 3, day);
-					var domain = window.location.hostname;
-					domain = domain.replace(/^www\./, '');
-					domain = domain.replace(/^stage\./, '');
-					domain = domain.replace(/^test\./, '');
-
-					if (window.userLoggedIn || window.promptedToLogin == "1") {
-						log("user is currently logged in, or has already been prompted to log in");
-					} else {
-						log("user is not logged in, prompting for login");
-
-						// prompt for login
-						$("body").append('<div id="loginPrompt" class="reveal-modal modal-wrapper modal-vertical-center" data-reveal aria-labelledby="loginPromptTitle" aria-hidden="true" role="dialog">\
-							<div class="row"><div class="column text-center"><div class="reveal-modal-content padding-b-2 padding-t-2">\
-							<h2 id="loginPromptTitle" class="text-center text-balance padding-t-1">This has been added to your Wish List</h2>\
-							<p class="text-center text-balance">Log in or create an account to save and access your Wish List from any device.</p>\
-							<div class="text-center"><a href="https://arts.nac-cna.ca/en/account/login?returnurl=https%3A%2F%2Fnac-cna.ca%2Fen%2Finstallations" title="Login/create account" class="bttn nomargin">\
-								Login/create account\
-							</a></div></div></div></div>\
-  							<a class="close-reveal-modal" aria-label="Close">&#215;</a>\
-						</div>').find('#loginPrompt').foundation('reveal', 'open');
-
-						// set a cookie so next time user visits, we won't bug them
-						Cookies.set(window.loginPrompted, "1", {
-							expires: threeMonthsInFuture,
-							domain: domain,
-							secure: true,
-						});
-					}
-				}
-				window.firstFav = false;
-			};
-		});
-	</script>
-
-
-
-	<!--[if (IE)&(lt IE 9) ]>
-		<script src="https://nac-cna.ca/assets/js/rem.min.js"></script>
-	<![endif]-->
 
 
 </body>
