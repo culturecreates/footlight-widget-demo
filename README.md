@@ -2,12 +2,10 @@
 
 Demo of Footlight widget.
 
-Google Analytics is enabled with gtag G-1CPH9RTLXF.
 
-### Footlight Widget
-[Demo 1](https://culturecreates.github.io/footlight-widget-demo/art-cms-widget.html)
-
+### Google Analytics
+Google Analytics is enabled on this demo site with gtag G-1CPH9RTLXF. This can be used to test events sent to Google Analytics such as calls to Footlight Open API for event listing (including params such as filters and date range), and calls to event details.
 
 
-### Elfsight Widget
-[Demo 2](https://culturecreates.github.io/footlight-widget-demo/art-elf-widget.html)
+### Demo NAC
+[Demo index page](https://culturecreates.github.io/footlight-widget-demo/index.html)
