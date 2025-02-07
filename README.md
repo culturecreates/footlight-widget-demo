@@ -1,6 +1,6 @@
 # footlight-widget-demo
 
-Demo of Footlight widget.
+Demo of Footlight widget. 
 
 
 ### Google Analytics
